@@ -294,11 +294,8 @@ int main()
 	unsigned int K1 = 0x13345779; //4byte
 	unsigned int K2 = 0x9BBCDFF1;
 	printf("\nKhoa K = "); ShowByte(K1); ShowByte(K2);
-	unsigned int m1,m2;
-    cin>>hex>>m1;
-    cin>>hex>>m2;
-	unsigned int M1 =m1;//0x01234567;
-	unsigned int M2 =m2;//0x89ABCDEF;
+	unsigned int M1 =0x01234567;
+	unsigned int M2 =0x89ABCDEF;
 	printf("\nBan tin M = "); ShowByte(M1); ShowByte(M2);
 	unsigned int C1, C2;
 	MahoaDES(M1, M2, K1, K2, C1, C2);
