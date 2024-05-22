@@ -119,7 +119,7 @@ if __name__ == "__main__":
     print("Running RSA...")
     print("Generating public/private keypair...")
     public, private = generate_keypair(
-        p, q, 2**bit_length)  # 8 is the keysize (bit-length) value.
+        p, q, 2**bit_length)  # 8 là giá trị kích thước khóa (độ dài bit)
     print("Public Key: ", public)
     print("Private Key: ", private)
     msg = input("Write msg: ")
